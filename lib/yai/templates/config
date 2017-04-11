@@ -1,0 +1,17 @@
+# -*- mode: yaml -*-
+
+# The url of the github API you are communicating with
+# Comment this out in case
+# api: https://code.host.com/api/v3
+
+# The name of the organization
+organization: events-team
+
+# The team that you will be using to choose who can be assigned
+team: rails
+
+# The name of the repository where the issues are
+repo: events
+
+# Access token created on Github. Required to run any operation. See README for more details
+# access_token: 3adf9asdfiadf

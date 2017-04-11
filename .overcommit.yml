@@ -1,0 +1,23 @@
+PreCommit:
+  ALL:
+    problem_on_unmodified_line: ignore
+
+  ForbiddenBranches:
+    enabled: false
+    branch_patterns: ['master']
+
+  FixMe:
+    enabled: true
+
+  HardTabs:
+    enabled: true
+
+  RuboCop:
+    enabled: true
+    command: ['bundle', 'exec', 'rubocop']
+
+  TrailingWhitespace:
+    enabled: true
+
+  YamlSyntax:
+    enabled: true

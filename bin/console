@@ -1,0 +1,13 @@
+#!/usr/bin/env ruby
+
+require 'bundler/setup'
+require 'yai'
+
+@config = Yai::Config.new
+@client = Yai::Client.new(@config).client
+
+@team = Yai::Team.new(@client, @config.organization, @config.team)
+@location = Yai::Location.new(organization: @config.organization, repo: @config.repo)
+
+require "pry"
+Pry.start

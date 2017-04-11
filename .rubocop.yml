@@ -1,0 +1,71 @@
+AllCops:
+  Exclude:
+    - bin/**/*
+  TargetRubyVersion: 2.3
+
+# Metrics
+
+Metrics/AbcSize:
+  Exclude:
+    - spec/**/*
+  Max: 30
+
+Metrics/BlockLength:
+  Exclude:
+    - spec/**/*
+
+Metrics/BlockNesting:
+  Max: 4
+
+Metrics/ClassLength:
+  CountComments: false
+  Max: 200
+
+Metrics/CyclomaticComplexity:
+  Max: 12
+
+Metrics/PerceivedComplexity:
+  Max: 14
+
+# Style
+
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/Encoding:
+  EnforcedStyle: when_needed
+
+# we shouldn't have a big problem with this, but it would spam all our files
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/NumericLiterals:
+  Enabled: false
+
+Style/SingleLineBlockParams:
+  Enabled: false
+
+###################
+# Disable for now #
+###################
+
+Metrics/LineLength:
+  Enabled: false
+
+Metrics/MethodLength:
+  Enabled: false
+
+Style/MultilineOperationIndentation:
+  Enabled: false
+
+Style/PerlBackrefs:
+  Enabled: false
+
+Style/RescueModifier:
+  Enabled: false
+
+Style/StringLiterals:
+  Enabled: false
